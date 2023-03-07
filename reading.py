@@ -1,9 +1,7 @@
 from gtts import gTTS
 from playsound import playsound
 
-
 language = 'en'
-words = ['read', 'write', 'other', 'machine']
 with open('words.txt') as file:
     correct_words = []
     num_correct = 0
@@ -25,4 +23,3 @@ with open('words.txt') as file:
 print(f'You have {num_correct} correct answered and {num_wrong} wrong answer ')
 print(f'correct words: {correct_words}')
 print(f'Wrong words: {wrong_words}')
-
